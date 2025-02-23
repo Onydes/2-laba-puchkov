@@ -1,0 +1,101 @@
+#root { 
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff, #e8f5e9);
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#root:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 8em;
+  padding: 1.5em;
+  transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #2e7d32aa);
+  transform: scale(1.15) rotate(7deg);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #00c853aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+.card {
+  padding: 2.5em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.read-the-docs {
+  color: #4caf50;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.read-the-docs:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Додаємо плавні ефекти при наведенні на посилання */
+a {
+  color: #388e3c;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #1b5e20;
+  transform: scale(1.1);
+}
+
+/* Анімований градієнт фону */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #e0f7fa, #aed581, #ffcc80, #ff8a65);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 8s ease infinite;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
