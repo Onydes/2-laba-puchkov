@@ -1,0 +1,41 @@
+.header {
+    background-image: url("https://videomix.com.ua/uploads/Fones/BD169.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* text-align: center; */
+    padding: 80px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+  }
+  
+  .header-logo {
+    width: 550px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .header-title {
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .header-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .header-burger {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
